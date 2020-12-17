@@ -40,8 +40,8 @@ function handelBoxClick(event){
 
   if(today.getDate() >= Number(daysClicked)){
 
-  clickedBox.innerHTML = icon[Number(daysClicked)];
-  
+  clickedBox.innerHTML = icons[Number(daysClicked)];
+
   storeClickedBoxes(Number(daysClicked));
 
   }else{
@@ -143,7 +143,7 @@ function resetCalender(){
 }
 
 const resetButton = document.createElement('button');
-resetButton.innerHTML = 'resetCalender';
+resetButton.innerHTML = 'Reset Calender';
 resetButton.addEventListener('click', resetCalender);
 
 const footer = document.querySelector('footer');
